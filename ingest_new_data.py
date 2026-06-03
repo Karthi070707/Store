@@ -118,6 +118,19 @@ def setup_store_layout():
         json.dump(layout, f, indent=2)
     print("[OK] Layout JSON written successfully.")
 
+def init_database_schema():
+    print("\n--- Initialising Database Schema ---")
+    import asyncio
+    from app.database import init_db
+    try:
+        loop = asyncio.get_event_loop()
+        if loop.is_closed():
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+        loop.run_until_complete(init_db())
+        print("[OK] Schema initialised.")
+    except Exception as e:
+        print(f"[ERROR] Failed to init schema: {e}")
 
 def clean_database():
     print("\n--- Purging Legacy Database ---")
@@ -760,6 +773,7 @@ def verify_ingested_data():
 
 if __name__ == "__main__":
     setup_store_layout()
+    init_database_schema()
     clean_database()
     ingest_st1008_events()
     ingest_st1008_pos()
