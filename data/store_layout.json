@@ -1,0 +1,963 @@
+{
+  "stores": {
+    "STORE_BLR_001": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "CAM_ENTRY_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z",
+          "entry_line": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ]
+          ]
+        },
+        "CAM_FLOOR_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        },
+        "CAM_BILLING_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        }
+      },
+      "zones": {
+        "ENTRY_AREA": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              640,
+              0
+            ],
+            [
+              640,
+              540
+            ],
+            [
+              0,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_ENTRY_01"
+          ],
+          "type": "entry"
+        },
+        "SKINCARE": {
+          "polygon": [
+            [
+              640,
+              0
+            ],
+            [
+              1280,
+              0
+            ],
+            [
+              1280,
+              540
+            ],
+            [
+              640,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "MOISTURISER"
+        },
+        "MAKEUP": {
+          "polygon": [
+            [
+              1280,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              540
+            ],
+            [
+              1280,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "FOUNDATION"
+        },
+        "HAIRCARE": {
+          "polygon": [
+            [
+              0,
+              540
+            ],
+            [
+              960,
+              540
+            ],
+            [
+              960,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "SHAMPOO"
+        },
+        "BILLING": {
+          "polygon": [
+            [
+              960,
+              540
+            ],
+            [
+              1920,
+              540
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              960,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_BILLING_01"
+          ],
+          "type": "billing"
+        }
+      },
+      "overlap_regions": [
+        {
+          "polygon": [
+            [
+              0,
+              400
+            ],
+            [
+              200,
+              400
+            ],
+            [
+              200,
+              600
+            ],
+            [
+              0,
+              600
+            ]
+          ]
+        }
+      ]
+    },
+    "STORE_BLR_002": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "CAM 1": {
+          "clip_start_time": "2026-04-10T08:00:00Z",
+          "entry_line": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ]
+          ]
+        },
+        "CAM 2": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        },
+        "CAM 3": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        },
+        "CAM 4": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        },
+        "CAM 5": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        }
+      },
+      "zones": {
+        "ENTRY_AREA": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 1"
+          ],
+          "type": "entry"
+        },
+        "SKINCARE": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 2"
+          ],
+          "sku_zone": "MOISTURISER"
+        },
+        "MAKEUP": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 3"
+          ],
+          "sku_zone": "FOUNDATION"
+        },
+        "HAIRCARE": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 4"
+          ],
+          "sku_zone": "SHAMPOO"
+        },
+        "BILLING": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 5"
+          ],
+          "type": "billing"
+        }
+      }
+    },
+    "STORE_BLR_003": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "CAM_ENTRY_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z",
+          "entry_line": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ]
+          ]
+        },
+        "CAM_FLOOR_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        },
+        "CAM_BILLING_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        }
+      },
+      "zones": {
+        "SKINCARE": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              960,
+              0
+            ],
+            [
+              960,
+              540
+            ],
+            [
+              0,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "MOISTURISER"
+        },
+        "MAKEUP": {
+          "polygon": [
+            [
+              960,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              540
+            ],
+            [
+              960,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "LIPSTICK"
+        },
+        "BILLING": {
+          "polygon": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_BILLING_01"
+          ],
+          "type": "billing"
+        }
+      }
+    },
+    "STORE_BLR_004": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "CAM_ENTRY_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z",
+          "entry_line": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ]
+          ]
+        },
+        "CAM_FLOOR_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        },
+        "CAM_BILLING_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        }
+      },
+      "zones": {
+        "SKINCARE": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              960,
+              0
+            ],
+            [
+              960,
+              540
+            ],
+            [
+              0,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "MOISTURISER"
+        },
+        "HAIRCARE": {
+          "polygon": [
+            [
+              960,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              540
+            ],
+            [
+              960,
+              540
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "CONDITIONER"
+        },
+        "BILLING": {
+          "polygon": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_BILLING_01"
+          ],
+          "type": "billing"
+        }
+      }
+    },
+    "STORE_BLR_005": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "CAM_ENTRY_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z",
+          "entry_line": [
+            [
+              0,
+              540
+            ],
+            [
+              1920,
+              540
+            ]
+          ]
+        },
+        "CAM_FLOOR_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        },
+        "CAM_BILLING_01": {
+          "clip_start_time": "2026-03-03T08:00:00Z"
+        }
+      },
+      "zones": {
+        "SKINCARE": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              640,
+              0
+            ],
+            [
+              640,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "SERUM"
+        },
+        "MAKEUP": {
+          "polygon": [
+            [
+              640,
+              0
+            ],
+            [
+              1280,
+              0
+            ],
+            [
+              1280,
+              1080
+            ],
+            [
+              640,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "FOUNDATION"
+        },
+        "FRAGRANCE": {
+          "polygon": [
+            [
+              1280,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              1280,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_FLOOR_01"
+          ],
+          "sku_zone": "PERFUME"
+        },
+        "BILLING": {
+          "polygon": [
+            [
+              0,
+              900
+            ],
+            [
+              1920,
+              900
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM_BILLING_01"
+          ],
+          "type": "billing"
+        }
+      }
+    },
+    "ST1008": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "CAM 1 - zone": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        },
+        "CAM 2 - zone": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        },
+        "CAM 3 - entry": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        },
+        "CAM 5 - billing": {
+          "clip_start_time": "2026-04-10T08:00:00Z"
+        }
+      },
+      "zones": {
+        "ENTRY_AREA": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 3 - entry"
+          ],
+          "type": "entry"
+        },
+        "SKINCARE": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 2 - zone"
+          ],
+          "sku_zone": "MOISTURISER"
+        },
+        "MAKEUP": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 1 - zone"
+          ],
+          "sku_zone": "FOUNDATION"
+        },
+        "BILLING": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "CAM 5 - billing"
+          ],
+          "type": "billing"
+        }
+      }
+    },
+    "ST1076": {
+      "open_hours": {
+        "open": 9,
+        "close": 21
+      },
+      "staff_uniform_hsv": [
+        {
+          "h_min": 130,
+          "h_max": 170,
+          "s_min": 50,
+          "s_max": 255,
+          "v_min": 50,
+          "v_max": 255
+        }
+      ],
+      "cameras": {
+        "entry 1": {
+          "clip_start_time": "2026-03-08T18:00:00Z"
+        },
+        "entry 2": {
+          "clip_start_time": "2026-03-08T18:00:00Z"
+        },
+        "zone": {
+          "clip_start_time": "2026-03-08T18:00:00Z"
+        },
+        "billing_area": {
+          "clip_start_time": "2026-03-08T18:00:00Z"
+        }
+      },
+      "zones": {
+        "Left Shelf": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "zone"
+          ],
+          "sku_zone": "LEFT_SHELF"
+        },
+        "Center Display": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "zone"
+          ],
+          "sku_zone": "CENTER_DISPLAY"
+        },
+        "Lipstick Aisle": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "zone"
+          ],
+          "sku_zone": "LIPSTICK_AISLE"
+        },
+        "Billing Counter Queue": {
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              1920,
+              0
+            ],
+            [
+              1920,
+              1080
+            ],
+            [
+              0,
+              1080
+            ]
+          ],
+          "camera_ids": [
+            "billing_area"
+          ],
+          "type": "billing"
+        }
+      }
+    }
+  }
+}
